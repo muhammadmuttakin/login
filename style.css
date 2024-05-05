@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    min-height: 100vh; /* Pastikan body memenuhi tinggi viewport */
+    background-image: linear-gradient(to right, #4682B4, #00FFFF, #00FA9A);
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Mengatur anak-anak container secara vertikal */
+    justify-content: center; /* Pusatkan konten anak secara vertikal di dalam container */
+    align-items: center; /* Pusatkan konten anak secara horizontal di dalam container */
+    background-color: azure;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Penambahan bayangan untuk estetika */
+    height: 301px;
+    width: 305px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memusatkan anak-anak secara horizontal dalam container */
+    justify-content: center; /* Opsi untuk memusatkan secara vertikal jika perlu */
+    height: 100vh; /* Contoh untuk membuat div memenuhi tinggi viewport, berguna untuk pusat vertikal */
+}
+
+/* Penambahan styling untuk form dan elemen di dalamnya */
+.form-group {
+    margin-bottom: 15px; /* Memberikan ruang antar input */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%; /* Membuat input memenuhi lebar container */
+    padding: 10px;
+    margin: 5px 0; /* Memberikan ruang atas bawah */
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Membuat ujung input sedikit bulat */
+    box-sizing: border-box; /* Mengatur box-sizing agar padding tidak menambahkan lebar */
+}
+
+button[type="button"] {
+    width: 100%;
+    background-color: #4682B4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #4169E1; /* Mengganti warna saat dihover */
+}
